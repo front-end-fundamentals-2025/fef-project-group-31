@@ -1,8 +1,12 @@
 /* Website font and background color*/
-*{
 
+*{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
   font-weight: 400;
-  font-style: normal;
+
 }
 
 .heart {
@@ -37,6 +41,11 @@ li {
     margin-left: 3rem;
     
 } 
+
+a {
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+}
 
 h1 {
     display: flex;
