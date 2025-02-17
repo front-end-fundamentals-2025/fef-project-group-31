@@ -1,0 +1,10 @@
+.makeup-nav ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.makeup-nav ul li {
+margin-left: 0%;
+margin-right: 3rem;
+
+}

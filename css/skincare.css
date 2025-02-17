@@ -1,0 +1,10 @@
+.skincare-nav ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.skincare-nav ul li {
+margin-left: 0%;
+margin-right: 3rem;
+
+}

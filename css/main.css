@@ -1,0 +1,46 @@
+/* Website font and background color*/
+*{
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+.heart {
+   width: 1em;
+   padding-left: 1em;
+}
+
+.cart {
+    width: 2em;
+    padding-left: 1em;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+   
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0%;
+    margin-bottom: 5%;
+    align-items: center;
+
+    
+}
+/*Space between listed items*/
+li {
+    margin-left: 3rem;
+    
+} 
+
+h1 {
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
