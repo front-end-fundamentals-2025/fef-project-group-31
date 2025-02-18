@@ -1,0 +1,39 @@
+img {
+    width: 100%;
+    align-items: center;
+}
+
+img {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    }
+
+@media screen and (max-width: 950px) {
+    .product {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .product {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
