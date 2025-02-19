@@ -11,7 +11,7 @@ img {
     justify-items: center;
     align-items: center;
     }
-
+/*responsiveness*/
 @media screen and (max-width: 950px) {
     .product {
         display: grid;
@@ -30,5 +30,15 @@ img {
         justify-items: center;
         align-items: center;
     }
+}
+/*Price tag and button "add-cart"*/
+.price {
+    margin-top: 5%;
+    color: rgb(83, 83, 83);
+}
+
+.add-cart {
+ margin-top: 5%;
+ font-size: medium;
 }
 

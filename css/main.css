@@ -15,7 +15,7 @@
 
 
 .cart {
-    width: 2em;
+    width: 1em;
     padding-left: 1em;
 
 }
@@ -28,6 +28,7 @@ header {
     display: flex;
     align-items: center;
     padding: 5px;
+    background-color:rgb(169, 169, 169);
    
 }
 
