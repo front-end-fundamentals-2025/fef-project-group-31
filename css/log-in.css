@@ -1,0 +1,41 @@
+form {
+    display: grid;
+    grid-gap: 1em;
+    width: 30vw;
+}
+/*The form itself*/
+section {
+    display: inline-block; /*shrink border around form*/
+    border: 0.2em solid;
+    border-radius: 1em;
+    padding: 2em;
+}
+/*move to middle of page*/
+main {
+    display: flex;
+    justify-content:center; /*horisontal*/
+    align-items: center; /*vertical*/
+    height: 100vh;
+    transform: translateY(-100px);
+}
+
+input, button {
+    height: 5em;
+}
+
+button {
+    background-color: #fce7de; 
+    font-weight: 700;
+    font-size: small;
+}
+input {
+    font-size: 70%;
+    padding: 0.4em;
+    border:  0.3em solid;
+    border-color:  #fce7de;
+}
+
+::placeholder {
+    font-size: large;
+    padding: 0.4em;
+}
