@@ -1,4 +1,65 @@
-.brushes-deals, .lipsticks-deals {
+h2 {
+    font-size: 200%;
+    color:rgb(111, 111, 111);
+    font-weight: 500;
+}
+
+.deals {
     width: 100%;
 }
 
+body {
+    margin: 0; /*so the corners don't continue around the header*/
+    padding: 0;
+}
+
+main {
+    margin: 1em;
+    margin-top: 4.5%;
+}
+
+section {
+    display: flex;
+    justify-content: left;  /* Aligns children horizontally to the left */
+    align-items: center;      /* Aligns children vertically in the center */
+    align-items: stretch;     /*make img and box same size*/
+    gap: 1em;                /* Adds space between the image and the box */
+}
+
+.deals {
+    width: 50em;
+    height: auto; /*keep proportions*/
+}
+
+.deal-box {
+    background-color: #ffa5a5;
+    border: 0.2em solid #ce898d;
+    border-radius: 0.5em;
+    flex-grow: 1; /*fills box out to end of page*/
+    justify-content: center;
+    align-items: center;
+    padding: 10em;
+}
+
+.box-under {
+    display: flex;  
+    flex-direction: column;
+    background-color: #d282a6;
+    height: 2em;
+    justify-content: center;
+}
+
+.deal-box p {
+    margin: 0;
+ text-align: left;
+    font-size:1000%;
+    color: aliceblue;
+
+}
+
+.box-under p {
+   text-align: center;
+   font-style: italic;
+   font-weight: 500;
+   color: white;
+}
