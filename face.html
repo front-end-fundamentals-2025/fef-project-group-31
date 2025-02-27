@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/face.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/cart.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -43,103 +45,133 @@
         </nav>
     </header>
 <main>
+<div class="container">
 <p>PRIMER</p>
-    <div class="product-list">
-        <div class="item">
+<div class="product-list">
     <section class="product">
+
+      <div class="product-box">
         <figure>
+            <div class="img-box">
             <img src="images/primer1.jpg" alt="Primer 1">
-            <figcaption>NYX Professional Makeup, Plump right back Primer + Serum</figcaption>
-            <div class="price">99SEK</div>
-            <button class="button" type="button">Add to cart</button>
-        </figure>
+        </div>
+            <figcaption class="product-title">NYX Professional Makeup, Plump right back Primer + Serum</figcaption>
+            <div class="price-and-cart">
+            <span class="price">99SEK</span>
+            <button class="add-cart-button" data-product-id="1" type="button">Add to cart</button>
+        </div>
+        </figure>   
+    </div>
+
+    <div class="product-box">
         <figure>
+            <div class="img-box">
             <img src="images/primer2.jpg" alt="Primer 2">
-            <figcaption>NYX Professional Makeup, Marshmellow soothing primer</figcaption>
-            <div class="price">259SEK</div>
-            <button class="button" type="button">Add to cart</button>
+        </div>
+            <figcaption class="product-title">NYX Professional Makeup, Marshmellow soothing primer</figcaption>
+            <div class="price-and-cart">
+            <span class="price">259SEK</span>
+            <button class="add-cart-button" data-product-id="2" type="button">Add to cart</button>
+        </div>
         </figure>
+    </div>
+
+<div class="product-box">
         <figure>
+            <div class="img-box">
             <img src="images/primer3.2.jpg" alt="Primer 3">
-            <figcaption>NYX Professional Makeup, Face freezie cooling Primer + Moisturizer</figcaption>
-            <div class="price">199SEK</div>
-            <button class="button" type="button">Add to cart</button>
+        </div>
+            <figcaption class="product-title">NYX Professional Makeup, Face freezie cooling Primer + Moisturizer</figcaption>
+            <div class="price-and-cart">
+            <span class="price">199SEK</span>
+            <button class="add-cart-button" data-product-id="3" type="button">Add to cart</button>
+        </div>
         </figure>
-        <figure>
+    </div>
+</section>
+</div>
+</div>
+        <!--<figure>
             <img src="images/primer4.jpg" alt="Primer 4">
             <figcaption>LUMENE, Blur longwear primer</figcaption>
             <div class="price">169SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/primer5.jpg" alt="Primer 5">
             <figcaption>LUMENE, Moisturizing illuminate primer</figcaption>
             <div class="price">179SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/primer6.jpg" alt="Primer 6">
             <figcaption>LUMENE, Instant glow UV primer SPF</figcaption>
             <div class="price">349SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/primer7.jpg" alt="Primer 7">
             <figcaption>LUMENE, CC Color correctiong primer</figcaption>
             <div class="price">169SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/primer8.jpg" alt="Primer 8">
             <figcaption>MAX FACTOR, Facefinity universal primer</figcaption>
             <div class="price">179SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
     </section>
 <hr>
-<p>FOUNDATION</p>
+</div>-->
+
+
+
+
+
+<!--<p>FOUNDATION</p>
     <section class="product">
         <figure>
             <img src="images/foundation1.jpg" alt="Foundation 1">
             <figcaption>LUMENE, Blur 16H longwear foundation</figcaption>
             <div class="price">229SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/foundation2.jpg" alt="Foundation 2">
             <figcaption>MAYBELLINE NEW YORK, Instant perfector 4-in-1 Glow</figcaption>
             <div class="price">189SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/foundation3.jpg" alt="Foundation 3">
             <figcaption>Anastasia Beverly Hills, Impeccable foundation</figcaption>
             <div class="price">589SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/foundation4.jpg" alt="Foundation 4">
             <figcaption>MAYBELLINE NEW YORK, FIT ME! Matte ? Poreless make-up</figcaption>
             <div class="price">139SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/foundation5.jpg" alt="Foundation 5">
             <figcaption>MAYBELLINE NEW YORK, Superstay lumi matte foundation</figcaption>
             <div class="price">219SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/foundation6.jpg" alt="Foundation 6">
             <figcaption>ISADORA, No compromise lightweight matte foundation</figcaption>
             <div class="price">229SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/foundation7.jpg" alt="Foundation 7">
             <figcaption>NYX Professional makeup, Buttermelt glaze skin tint SPF30 Foundation</figcaption>
             <div class="price">199SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
     </section>
 <hr>
@@ -149,49 +181,49 @@
             <img src="images/concealer1.jpg" alt="Concealer 1">
             <figcaption>MAYBELLINE NEW YORK, FIT ME Concealer</figcaption>
             <div class="price">89SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/concealer2.jpg" alt="Concealer 2">
             <figcaption>NYX Professional Makeup, Bare with me Concealer serum</figcaption>
             <div class="price">169SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/concealer3.jpg" alt="Concealer 3">
             <figcaption>NYX Professional Makeup, Fix stick concealer stick</figcaption>
             <div class="price">189SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/concealer4.jpg" alt="Concealer 4">
             <figcaption>ANASTASIA BEVERLY HILLS, Magic touch concealer</figcaption>
             <div class="price">369SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/concealer5.jpg" alt="Concealer 5">
             <figcaption>ISADORA, no compromise lightweight matte concealer</figcaption>
             <div class="price">179SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/concealer6.jpg" alt="Concealer 6">
             <figcaption>REVOLUTION, Eye bright concealer</figcaption>
             <div class="price">145SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/concealer7.jpg" alt="Concealer 7">
             <figcaption>SMASHBOX, Halo healthy glow 4-IN.1 perfecting concealer pen</figcaption>
             <div class="price">369SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/concealer8.jpg" alt="Concealer 8">
             <figcaption>REVOLUTION, IRL Filter finish concealer</figcaption>
             <div class="price">99SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
     </section>
 <hr>
@@ -201,49 +233,43 @@
             <img src="images/bronzer1.jpg" alt="Bronzer 1">
             <figcaption>NYX Professional Makeup, Buttermelt bronzer</figcaption>
             <div class="price">149SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/bronzer2.jpg" alt="Bronzer 2">
             <figcaption>REVOLUTION, Ultra cream bronzer</figcaption>
             <div class="price">99SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/bronzer3.jpg" alt="Bronzer 3">
             <figcaption>L'ORÉAL PARIS, Bronze of paradise bronzer</figcaption>
             <div class="price">179SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/bronzer4.jpg" alt="Bronzer 4">
             <figcaption>LUMENE, Natural glow bronzer</figcaption>
             <div class="price">199SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/bronzer5.jpg" alt="Bronzer 5">
             <figcaption>LUMENE, Invisible illumination liquid bronzer</figcaption>
             <div class="price">349SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/bronzer6.jpg" alt="Bronzer 6">
             <figcaption>ANASTASIA BEVERLY HILLS, Powder bronzer</figcaption>
             <div class="price">399SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/bronzer7.jpg" alt="Bronzer 7">
             <figcaption>ANASTASIA BEVERLY HILLS, Cream bronzer</figcaption>
-            <div class="price">489SEK</div>
-            <button class="button" type="button">Add to cart</button>
-        </figure>
-        <figure>
-            <img src="images/bronzer8.jpg" alt="Bronzer 8">
-            <figcaption>REVOLUTION, Mega bronzer</figcaption>
-            <div class="price">79SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <div class="price">499SEK</div>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
     </section>
 <hr>
@@ -251,181 +277,48 @@
     <section class="product">
         <figure>
             <img src="images/blush1.jpg" alt="Blush 1">
-            <figcaption>NYX Professional Makeup, Buttermelt Blush</figcaption>
-            <div class="price">149SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <figcaption>NYX Professional Makeup, Sweet cheeks matte blush</figcaption>
+            <div class="price">179SEK</div>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/blush2.jpg" alt="Blush 2">
-            <figcaption>L'ORÉAL PARIS, True match blush rouge</figcaption>
-            <div class="price">139SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <figcaption>NYX Professional Makeup, Sweet cheeks cream blush</figcaption>
+            <div class="price">179SEK</div>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/blush3.jpg" alt="Blush 3">
-            <figcaption>ISADORA, Blush stick</figcaption>
-            <div class="price">159SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <figcaption>REVOLUTION, Blush bomb liquid blush</figcaption>
+            <div class="price">145SEK</div>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/blush4.jpg" alt="Blush 4">
-            <figcaption>REVOLUTION, Reloaded blusher </figcaption>
-            <div class="price">59SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <figcaption>ANASTASIA BEVERLY HILLS, Blush trio</figcaption>
+            <div class="price">589SEK</div>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/blush5.jpg" alt="Blush 5">
-            <figcaption>ISADORA, The powder blush</figcaption>
-            <div class="price">159SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <figcaption>LUMENE, Blush stick</figcaption>
+            <div class="price">149SEK</div>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/blush6.jpg" alt="Blush 6">
-            <figcaption>REVOLUTION, Ultra blush palette</figcaption>
-            <div class="price">109SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <figcaption>SMASHBOX, Cali contour powder blush</figcaption>
+            <div class="price">459SEK</div>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
         <figure>
             <img src="images/blush7.jpg" alt="Blush 7">
-            <figcaption>MAYBELLINE NEW YORK, Sunkisser blush...</figcaption>
+            <figcaption>L'ORÉAL PARIS, Glow blush</figcaption>
             <div class="price">179SEK</div>
-            <button class="button" type="button">Add to cart</button>
+            <button class="add-cart-button" type="button">Add to cart</button>
         </figure>
     </section>
-<hr>
-<p>HIGHLIGHTER</p>
-    <section class="product">
-        <figure>
-            <img src="images/highlighter1.jpg" alt="Highligter 1">
-            <figcaption>REVOLUTION, Beam bright highlighter</figcaption>
-            <div class="price">99SEK</div>
-            <button class="button" type="button">Add to cart</button>
-        </figure>
-        <figure>
-            <img src="images/highlighter2.jpg" alt="Highligter 2">
-            <figcaption>REVOLUTION, Re-Loaded highlighter</figcaption>
-            <div class="price">59SEK</div>
-            <button class="button" type="button">Add to cart</button>
-        </figure>
-        <figure>
-            <img src="images/highlighter3.jpg" alt="Highligter 3">
-            <figcaption>LUMENE, Natural glow skin tone perfector</figcaption>
-            <div class="price">159SEK</div>
-            <button class="button" type="button">Add to cart</button>
-        </figure>
-        <figure>
-            <img src="images/highlighter4.jpg" alt="Highligter 4">
-            <figcaption>ISADORA, Glow stick</figcaption>
-            <div class="price">159SEK</div>
-            <button class="button" type="button">Add to cart</button>
-        </figure>
-        <figure>
-            <img src="images/highlighter5.jpg" alt="Highligter 5">
-            <figcaption>ANASTASIA BEVERLY HILLS, Glow seeker highlighter</figcaption>
-            <div class="price">489SEK</div>
-            <button class="button" type="button">Add to cart</button>
-        </figure>
-        <figure>
-            <img src="images/highlighter6.jpg" alt="Highligter 6">
-            <figcaption>M.A.C COSMETICS, Extra dimension skinfinish</figcaption>
-            <div class="price">99SEK</div>
-            <button class="button" type="button">Add to cart</button>
-        </figure>
-        <figure>
-            <img src="images/highlighter7.jpg" alt="Highligter 7">
-            <figcaption>L'ORÉAL PARIS, Lumi glotion highlighter</figcaption>
-            <div class="price">189SEK</div>
-            <button class="button" type="button">Add to cart</button>
-        </figure>
-    </section>
-<hr>
-<p>POWDER</p>
-    <section class="product">
-        <figure>
-            <img src="images/powder1.jpg" alt="Powder 1">
-            <figcaption>ANASTASIA BEVERLY HILLS, Mini loose setting powder</figcaption>
-            <div class="price">289SEK</div>
-            <button class="button" type="button">Add to cart</button>
-        </figure>
-        <figure>
-            <img src="images/powder2.jpg" alt="Powder 2">
-            <figcaption>MAYBELLINE NEW YORK, Face studio Setting Powder</figcaption>
-            <div class="price">139SEK</div>
-            <button class="button" type="button">Add to cart</button>
-        </figure>
-        <figure>
-            <img src="images/powder3.jpg" alt="Powder 3">
-            <figcaption>ISADORA, The no compromise matte longwear powder</figcaption>
-            <div class="price">189SEK</div>
-            <button class="button" type="button">Add to cart</button>
-        </figure>
-        <figure>
-            <img src="images/powder4.jpg" alt="Powder 4">
-            <figcaption>MAYBELLINE NEW YORK, FIT ME matte & poreless powder</figcaption>
-            <div class="price">139SEK</div>
-            <button class="button" type="button">Add to cart</button>
-        </figure>
-        <figure>
-            <img src="images/powder5.jpg" alt="Powder 5">
-            <figcaption>NYX Professional Makeup, High definition finishing powder</figcaption>
-            <div class="price">189SEK</div>
-            <button class="button" type="button">Add to cart</button>
-        </figure>
-        <figure>
-            <img src="images/powder6.jpg" alt="Powder 6">
-            <figcaption>REVOLUTION, Loose baking powder</figcaption>
-            <div class="price">94SEK</div>
-            <button class="button" type="button">Add to cart</button>
-        </figure>
-        <figure>
-            <img src="images/powder7.jpg" alt="Powder 7">
-            <figcaption>LUMENE, Sheer finish loose powder</figcaption>
-            <div class="price">219SEK</div>
-            <button class="button" type="button">Add to cart</button>
-        </figure>
-    </section>
-<hr>
-<p>SETTING SPRAY</p>
-    <section class="product">
-    <figure>
-        <img src="images/setting-spray1.jpg" alt="Setting spray 1">
-        <figcaption>NYX Professional Makeup, Make up setting spray</figcaption>
-        <div class="price">159SEK</div>
-        <button class="button" type="button">Add to cart</button>
-    </figure>
-    <figure>
-        <img src="images/setting-spray2.jpg" alt="Setting spray 2">
-        <figcaption>MAYBELLINE NEW YORK, Face studio setting spray lasting fix</figcaption>
-        <div class="price">159SEK</div>
-        <button class="button" type="button">Add to cart</button>
-    </figure>
-    <figure>
-        <img src="images/setting-spray3.jpg" alt="Setting spray 3">
-        <figcaption>REVOLUTION, Superdewy misting spray</figcaption>
-        <div class="price">129SEK</div>
-        <button class="button" type="button">Add to cart</button>
-    </figure>
-    <figure>
-        <img src="images/setting-spray4.jpg" alt="Setting spray 4">
-        <figcaption>REVOLUTION, Fix & glow setting spray</figcaption>
-        <div class="price">149SEK</div>
-        <button class="button" type="button">Add to cart</button>
-    </figure>
-    <figure>
-        <img src="images/setting-spray5.jpg" alt="Setting spray 5">
-        <figcaption>NYX Professional Makeup, Make up setting spray</figcaption>
-        <div class="price">159SEK</div>
-        <button class="button" type="button">Add to cart</button>
-    </figure>
-    <figure>
-        <img src="images/setting-spray6.jpg" alt="Setting spray 6">
-        <figcaption>NYX Professional Makeup, The marshmallow matte setting spray</figcaption>
-        <div class="price">159SEK</div>
-        <button class="button" type="button">Add to cart</button>
-    </figure>
-    </section>
-</div>
-</div>
+</div>-->
 
 </main>
 </body>

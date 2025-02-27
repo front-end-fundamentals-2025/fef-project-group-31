@@ -16,7 +16,7 @@ main {
     justify-content:center; /*horisontal*/
     align-items: center; /*vertical*/
     height: 100vh;
-    transform: translateY(-100px);
+    transform: translateY(-5px);
 }
 
 input, button {

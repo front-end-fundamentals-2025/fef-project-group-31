@@ -1,5 +1,5 @@
 img {
-    width: 50%;
+    width: 100%;
     display: block;
     margin: auto;
 }
@@ -10,7 +10,25 @@ img {
     gap: 10px;
     justify-items: center;
     align-items: center;
+
     }
+
+    .product-box {
+       /* Border around each product box */
+        padding: 10px;
+        margin-bottom: 20px; /* Space between product boxes */
+        border-radius: 10px; /* Optional: Rounded corners for a softer look */
+        justify-content: space-between;
+        background-color: #fce7de3a; 
+        height: 600px;
+    }
+
+    .product-title {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
 /*responsiveness*/
 @media screen and (max-width: 1430px) {
     .product {
@@ -46,9 +64,15 @@ img {
     color: rgb(83, 83, 83);
 }
 
-.button {
+.add-cart-button {
  margin-top: 5%;
  font-size: medium;
+ padding: 0.5em;
+ border: 2px solid;
+ border-radius: 0.5em;
+ border-color:white;
+ background-color: #f9f9f9; 
+ 
 }
 
 p{

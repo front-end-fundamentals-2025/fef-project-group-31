@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "image": "images/primer1.jpg",
+    "name": "NYX Professional Makeup, Plump right back Primer + Serum",
+    "price": "99SEK",
+    "quantity": 0
+  },
+  {
+    "id": 2,
+    "image": "images/primer2.jpg",
+    "name": "NYX Professional Makeup, Marshmellow soothing primer",
+    "price": "259SEK",
+    "quantity": 0
+  },
+  {
+    "id": 3,
+    "image": "images/primer3.2.jpg",
+    "name": "NYX Professional Makeup, Face freezie cooling Primer + Moisturizer",
+    "price": "199SEK",
+    "quantity": 0
+  }
+]

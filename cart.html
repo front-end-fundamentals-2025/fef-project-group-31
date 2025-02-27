@@ -6,7 +6,8 @@
     <title>Esther Cosmetics</title>
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="css/makeup.css"/>
-    <srcipt src="js/main.js" defer></srcipt>
+    <script src="js/main.js" defer></script>
+    <script src="js/cart.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -44,10 +45,33 @@
     </nav>
 </header>
 <main>
-    <h3>My shopping bag</h3>
-  <ul id="cart-items"></ul>
-<p>Total: SEK<span id="total-price">0</span></p>
 
+<!--<div class="cart">
+    <h2 class="cart-title">Your Cart</h2>
+    <div class="cart-content">-->
+  <!-- <div class="cart-box">
+<img src="images/primer1.jpg" class="cart-img">
+<div class="cart-detail">
+    <h2 class="cart-product-title">NYX Professional Makeup, Plump right back Primer + Serum</h2>
+<span class="cart-price">99SEK</span>
+<div class="cart-quantity">
+    <button id="fewer">-</button>
+    <button id="more">+</button>
+</div>
+</div>
+  </div> -->
+   <!-- </div>
+    <div class="cart-total">
+        Total: <span id="cart-total-price">0 SEK</span>
+    </div>
+    <button id="checkout-button">Checkout</button>
+</div>  -->
+
+<div id="cart-container"></div>
+
+    <div class="total">
+        <span>Total: $<span id="total-price">0.00</span></span>
+    </div>
 </main>
 </body>
 </html>
