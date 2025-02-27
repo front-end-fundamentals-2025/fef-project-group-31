@@ -293,14 +293,14 @@ let products = JSON.parse(localStorage.getItem("products"));
 return product.id == productId;
     });
 
-    if(cart.length == 0) {
+    /*if(cart.length == 0) {
         cart.push(product);
     }else{
         let res = cart.find(element => element.id == productId);
         if(res === undefined){
             cart.push(product);
         }
-    }
+    }*/
 
     if (product) {
         // Ensure the product is not already in the cart
@@ -308,12 +308,15 @@ return product.id == productId;
             return item.id == productId;
         });
 
-        if (!productInCart) {
-            cart.push(product);  // Add product to cart
+        if (productInCart) {
+            updateQuantity(productId, productInCart.quantity + 1);
+        } else {
+            // If the product is not in the cart, add it with quantity 1
+            product.quantity = 1;
+            cart.push(product);
+            localStorage.setItem("cart", JSON.stringify(cart));
         }
-
-        // Update localStorage with the new cart
-        localStorage.setItem("cart", JSON.stringify(cart));
+            
 
         console.log('Product added to cart:', product); // Log the added product
         console.log('Current cart:', cart); 
@@ -356,5 +359,5 @@ function updateQuantity(productId, quantity){
   }
 
 
-  localStorage.clear();
+  //localStorage.clear();
   

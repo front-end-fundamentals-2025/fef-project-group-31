@@ -194,6 +194,145 @@
   }
 });*/
 
-console.log('Current cart:', cart); 
+
+
+//Displaying the image, name, price and quantity in cart page
+
+/*document.addEventListener('DOMContentLoaded', function() {
+  // The code inside here will only run after the DOM is fully loaded
+  let cartContainer = document.getElementById('cart-container');
+
+  if (cart && cart.length > 0) {
+      cart.forEach(function(product) {
+          let productDiv = document.createElement('div');
+          productDiv.classList.add('cart-item');
+
+          let productHTML = `
+              <div class="cart-item-image">
+                  <img src="${product.image}" alt="${product.name}" />
+              </div>
+              <div class="cart-item-details">
+                  <h3 class="product-name">${product.name}</h3>
+                  <p class="product-price">${product.price}</p>
+                  <p class="product-quantity">Quantity: ${product.quantity}</p>
+              </div>
+          `;
+          
+          productDiv.innerHTML = productHTML;
+          cartContainer.appendChild(productDiv);
+      });
+  } else {
+      cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+  }
+}); */
+
+//Function for changing number of products 
+function updateQuantity(productId, quantity){
+  for(let product of cart){
+      if(product.id == productId){
+          product.quantity = quantity;
+      }
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
+//Function for removing item from cart
+function removeItemFromCart(productId){
+  let temp = cart.filter(item => item.id != productId);
+  localStorage.setItem("cart", JSON.stringify(temp));
+}
+
+//Once the DOM is loaded + cart container exists, display selected product and + - buttons
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the cart container where products will be displayed
+  let cartContainer = document.getElementById('cart-container');
+
+  // If the cart container exists
+  if (cartContainer) { //display the product image, name, price and quantity
+      let cart = JSON.parse(localStorage.getItem("cart")) || []; // Get cart from localStorage
+
+      if (cart.length > 0) {
+          // Loop through the cart and display each product
+          cart.forEach(function(product) {
+              let productDiv = document.createElement('div');
+              productDiv.classList.add('cart-item');
+              
+              let productHTML = `
+                  <div class="cart-item-image">
+                      <img src="${product.image}" alt="${product.name}" />
+                  </div>
+                  <div class="cart-item-details">
+                      <h3 class="product-name">${product.name}</h3>
+                      <p class="product-price">${product.price}</p>
+                      <p class="product-quantity">Quantity: <span class="quantity">${product.quantity}</span></p>
+                  </div> 
+                  <button class="plus-button" data-product-id="${product.id}" type="button">+</button>
+              <button class="minus-button" data-product-id="${product.id}" type="button">-</button>
+                  `; //add a + and - button
+              
+              productDiv.innerHTML = productHTML;
+
+              // Append the product to the cart container
+              cartContainer.appendChild(productDiv);
+          });
+      } else {
+          // If the cart is empty, display a message
+          cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+      }
+  } else {
+      console.error('Cart container not found!');
+  }
+});
+
+
+//For the + - buttons:
+//Once DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+  const plusButtons = document.querySelectorAll('.plus-button');
+  const minusButtons = document.querySelectorAll('.minus-button');
+
+  // Loop through all plus buttons + Event listener for + button
+  plusButtons.forEach(function(button) {
+      button.addEventListener('click', function(event) {
+          const productId = button.getAttribute('data-product-id');
+          const cart = JSON.parse(localStorage.getItem("cart")) || []; // Retrieve cart from localStorage
+          const product = cart.find(item => item.id == productId);
+          
+          if (product) {
+              updateQuantity(product.id, product.quantity + 1);
+              // Show the new quantity on website:
+              const quantitySpan = button.parentElement.querySelector('.quantity');
+              if (quantitySpan) {
+                  quantitySpan.textContent = product.quantity + 1;
+              }
+          }
+      });
+  });
+
+  minusButtons.forEach(function(button){
+    button.addEventListener('click', function(event){
+      const productId = button.getAttribute('data-product-id');
+          const cart = JSON.parse(localStorage.getItem("cart")) || []; // Retrieve cart from localStorage
+          const product = cart.find(item => item.id == productId);
+          
+          if (product && product.quantity > 1) { // only if its 1 or bigger, so it does not remove below 1  
+              updateQuantity(product.id, product.quantity - 1);
+              // Show the new quantity on website:
+              const quantitySpan = button.parentElement.querySelector('.quantity');
+              if (quantitySpan) {
+                  quantitySpan.textContent = product.quantity - 1;
+              }
+          } else if (product && product.quantity === 1) {
+            // If the quantity is 1 and the user clicks "-" button, remove the product from the cart
+           removeItemFromCart(productId);
+            //Remove from the website visually:
+            const productElement = button.closest('.cart-item');
+        if (productElement) {
+          productElement.remove();
+          alert("You are now emptying the cart.");
+          }
+        }
+    });
+  })
+});
 
 
