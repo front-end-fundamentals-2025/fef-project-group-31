@@ -4,20 +4,23 @@
     "image": "images/primer1.jpg",
     "name": "NYX Professional Makeup, Plump right back Primer + Serum",
     "price": "99SEK",
-    "quantity": 0
+    "quantity": 0,
+    "description": "A hydrating primer that works as a serum too. Perfect for plumping the skin before makeup."
   },
   {
     "id": 2,
     "image": "images/primer2.jpg",
     "name": "NYX Professional Makeup, Marshmellow soothing primer",
     "price": "259SEK",
-    "quantity": 0
+    "quantity": 0,
+     "description": "A soothing primer that helps to create a smooth base for your makeup, while also calming the skin."
   },
   {
     "id": 3,
     "image": "images/primer3.2.jpg",
     "name": "NYX Professional Makeup, Face freezie cooling Primer + Moisturizer",
     "price": "199SEK",
-    "quantity": 0
+    "quantity": 0,
+    "description": "A cooling primer + moisturizer that refreshes and hydrates the skin before applying makeup."
   }
 ]

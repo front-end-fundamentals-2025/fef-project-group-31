@@ -1,3 +1,7 @@
+/* Functions removeItemFromCart, updateQuantity adapted from
+ Digital Fox https://www.youtube.com/watch?v=pRkHOD_nkH4&t=408s */
+
+
 // Function for removing item from cart
 function removeItemFromCart(productId){
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -8,18 +12,28 @@ function removeItemFromCart(productId){
   } else {
       localStorage.setItem("cart", JSON.stringify(updatedCart)); // Update localStorage with the new cart
   }
+  updateTotalPrice();
 }
 
 //Function for changing number of products + showing the new price 
 function updateQuantity(productId, quantity){
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
   for(let product of cart){
       if(product.id == productId){
           product.quantity = quantity;
+          if (quantity <= 0) {
+            // If quantity reaches 0, remove the product, make sure its removed
+            removeItemFromCart(productId); 
+            return; // Exit after removal
+        }
       }
   }
   localStorage.setItem("cart", JSON.stringify(cart));
  updateTotalPrice();
 }
+
+/*Function updateTotalPrice inspired by Digital Fox https://www.youtube.com/watch?v=pRkHOD_nkH4&t=408s 
+and refined with ChatGPT*/ 
 
 // Function for calculating total and displaying it
 function updateTotalPrice() {
@@ -37,14 +51,14 @@ function updateTotalPrice() {
   // Display the total price in HTML div 
   const totalPriceDiv = document.getElementById('display-total-price');
   if (totalPriceDiv) {
-      totalPriceDiv.innerHTML = `<p>Total Price: $${total.toFixed(2)}</p>`; // Format to 2 decimal places
+      totalPriceDiv.innerHTML = `<p>Total Price: SEK${total.toFixed(2)}</p>`; // Format to 2 decimal places
   }
-
   if(total === 0) {
     totalPriceDiv.innerHTML = `<p></p>`; //otherwise the totalprice=0 remains on screen when cart empty
   }
 }
 
+/*Adapted with help by ChatGPT */ 
 //Once the DOM is loaded + cart container exists, display selected product and + - buttons
 document.addEventListener('DOMContentLoaded', function() {
   // Get the cart container where products will be displayed
@@ -89,6 +103,10 @@ document.addEventListener('DOMContentLoaded', function() {
       console.error('Cart container not found!');
   }
 });
+
+/*Fundementals of event listener for buttons inspired by Evelines video
+, consistent quantity updating and implementing functions correctly 
+with help from ChatGPT */
 
 //For the + - buttons:
 //Once DOM is loaded

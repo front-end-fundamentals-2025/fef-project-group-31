@@ -1,0 +1,21 @@
+.detail-header, .price {
+    padding-left: 1rem;
+}
+
+.detail-image {
+width: 30%;
+margin-left: 0;
+}
+
+.description {
+    font-weight: 400;
+  font-size: medium;
+}
+
+.add-cart-button {
+    margin-left: 1rem;
+}
+
+
+
+

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js" defer></script>
     <script src="js/cart.js" defer></script>
+    <script src="js/detail.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -45,12 +46,13 @@
         </nav>
     </header>
 <main>
-<div class="container">
+
 <p>PRIMER</p>
-<div class="product-list">
+
     <section class="product">
 
       <div class="product-box">
+        <a href="detail-page.html?productId=1">
         <figure>
             <div class="img-box">
             <img src="images/primer1.jpg" alt="Primer 1">
@@ -58,12 +60,14 @@
             <figcaption class="product-title">NYX Professional Makeup, Plump right back Primer + Serum</figcaption>
             <div class="price-and-cart">
             <span class="price">99SEK</span>
-            <button class="add-cart-button" data-product-id="1" type="button">Add to cart</button>
         </div>
-        </figure>   
+        </figure>  
+    </a> 
+    <button class="add-cart-button" data-product-id="1" type="button">Add to cart</button>
     </div>
 
     <div class="product-box">
+        <a href="detail-page.html?productId=2">
         <figure>
             <div class="img-box">
             <img src="images/primer2.jpg" alt="Primer 2">
@@ -71,12 +75,14 @@
             <figcaption class="product-title">NYX Professional Makeup, Marshmellow soothing primer</figcaption>
             <div class="price-and-cart">
             <span class="price">259SEK</span>
-            <button class="add-cart-button" data-product-id="2" type="button">Add to cart</button>
         </div>
         </figure>
+    </a>
+    <button class="add-cart-button" data-product-id="2" type="button">Add to cart</button>
     </div>
 
 <div class="product-box">
+    <a href="detail-page.html?productId=3">
         <figure>
             <div class="img-box">
             <img src="images/primer3.2.jpg" alt="Primer 3">
@@ -84,13 +90,13 @@
             <figcaption class="product-title">NYX Professional Makeup, Face freezie cooling Primer + Moisturizer</figcaption>
             <div class="price-and-cart">
             <span class="price">199SEK</span>
-            <button class="add-cart-button" data-product-id="3" type="button">Add to cart</button>
         </div>
         </figure>
+    </a>
+    <button class="add-cart-button" data-product-id="3" type="button">Add to cart</button>
     </div>
 </section>
-</div>
-</div>
+
         <!--<figure>
             <img src="images/primer4.jpg" alt="Primer 4">
             <figcaption>LUMENE, Blur longwear primer</figcaption>
