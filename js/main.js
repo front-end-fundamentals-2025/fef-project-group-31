@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     addCartButtons.forEach(function(button) {
         button.addEventListener('click', function() {
-            console.log("clicked");
+            alert("Added to cart!");
             let productId = button.getAttribute('data-product-id');
             addItemToCart(productId);
         });
