@@ -92,8 +92,8 @@ hr {
   }
 
   .add-cart-button:hover {
-    background-color: #fce7de; /* Change background color */
-    color: white; /* Change text color */
+    background-color: #fce7de; 
+    color: white; 
     border-color: #fce7de;
-    transform: scale(1.1); /* Slightly increase button size */
+    transform: scale(1.1); 
 }
