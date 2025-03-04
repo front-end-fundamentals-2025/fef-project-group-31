@@ -82,6 +82,7 @@ body {
         color: #d282a6;
     }
 
+<<<<<<< HEAD
 
    /* Code in HTML and CSS for cart count- dispalying inspired by: https://www.youtube.com/watch?v=gXWohFYrI0M&t=758s */
 
@@ -108,3 +109,21 @@ body {
     border-radius: 50%; /* Circular shape */
     font-weight: bold;
 }
+=======
+    .box-under {
+        position: relative;
+        font-size: 20px;
+        font-weight: bold;
+        white-space: nowrap;
+        animation: moveText 35s linear infinite;
+    }
+
+    @keyframes moveText {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+>>>>>>> 3497a9cacae15ff9af07ba93d82b331254efeea0

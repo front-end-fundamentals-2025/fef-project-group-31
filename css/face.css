@@ -90,3 +90,10 @@ hr {
     margin-left: 20px;
     margin-right: 20px;
   }
+
+.add-cart-button:hover {
+    background-color: #fce7de; 
+    color: white; 
+    border-color: #ffe1d5;
+    transform: scale(1.1); 
+}
