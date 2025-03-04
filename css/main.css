@@ -86,7 +86,7 @@ body {
         position: relative;
         font-size: 20px;
         font-weight: bold;
-        white-space: nowrap; /* Prevents text from wrapping */
+        white-space: nowrap;
         animation: moveText 35s linear infinite;
     }
 
