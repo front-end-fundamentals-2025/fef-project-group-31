@@ -22,6 +22,32 @@ let cart = JSON.parse(localStorage.getItem("cart"));
     }
     localStorage.setItem("cart", JSON.stringify(cart));
 }
+
+
+// Function to update the cart count in header adapted from https://www.youtube.com/watch?v=gXWohFYrI0M&t=758s and ChatGPT 
+function updateCartCount() {
+    // Get cart from localStorage
+    let cart = JSON.parse(localStorage.getItem("cart")) || []; 
+    let totalQuantity = 0;
+  
+    // Loop through the cart to calculate the total quantity of items
+    cart.forEach(function(product) {
+      totalQuantity += product.quantity; // Add the quantity of each product
+    });
+  
+    // Find the cart count element and update its text content
+    let iconCartSpan = document.querySelector('.cart-count');
+
+    if (iconCartSpan) {
+      iconCartSpan.innerText = totalQuantity; // Displaying
+    }
+  }
+//Update header item amount when page is loaded 
+  document.addEventListener('DOMContentLoaded', function() {
+    updateCartCount();
+  });
+
+  
 //Function for adding products to cart 
   function addItemToCart(productId){
     let product = products.find(function(product){
@@ -42,6 +68,8 @@ return product.id == productId;
         }
         console.log('Product added to cart:', product); // Log the added product
         console.log('Current cart:', cart); 
+
+        updateCartCount(); //show amount in header immediately once addtocart happens
   }
 
  function getTotal(){
@@ -73,3 +101,4 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //localStorage.clear();     //debugging
+

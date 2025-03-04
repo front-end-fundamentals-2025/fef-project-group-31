@@ -13,6 +13,7 @@ function removeItemFromCart(productId){
       localStorage.setItem("cart", JSON.stringify(updatedCart)); // Update localStorage with the new cart
   }
   updateTotalPrice();
+  updateCartCount(); //remove from amount shown in the header immediately 
 }
 
 //Function for changing number of products + showing the new price 
@@ -67,7 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // If the cart container exists
   if (cartContainer) { //display the product image, name, price and quantity
       let cart = JSON.parse(localStorage.getItem("cart")) || []; // Get cart from localStorage
-
       if (cart.length > 0) {
           // Loop through the cart and display each product
           cart.forEach(function(product) {
