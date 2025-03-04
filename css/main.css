@@ -81,3 +81,20 @@ body {
     li:hover {
         color: #d282a6;
     }
+
+    .box-under {
+        position: relative;
+        font-size: 20px;
+        font-weight: bold;
+        white-space: nowrap; /* Prevents text from wrapping */
+        animation: moveText 35s linear infinite;
+    }
+
+    @keyframes moveText {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
