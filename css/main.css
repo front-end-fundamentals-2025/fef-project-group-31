@@ -82,6 +82,34 @@ body {
         color: #d282a6;
     }
 
+<<<<<<< HEAD
+
+   /* Code in HTML and CSS for cart count- dispalying inspired by: https://www.youtube.com/watch?v=gXWohFYrI0M&t=758s */
+
+/* Make sure the cart icon container is positioned relative */
+.icon.cart {
+    position: relative;
+}
+
+/* Stick to corner of the cart icon */
+.cart-count {
+    position: absolute;
+    transform: translate(4.7em, -2.7em);
+    background-color: rgb(255, 0, 76);
+    width: 20px;
+    height: 20px;
+
+/*Center the text*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+
+    border-radius: 50%; /* Circular shape */
+    font-weight: bold;
+}
+=======
     .box-under {
         position: relative;
         font-size: 20px;
@@ -98,3 +126,4 @@ body {
             transform: translateX(100%);
         }
     }
+>>>>>>> 3497a9cacae15ff9af07ba93d82b331254efeea0
