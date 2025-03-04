@@ -94,6 +94,6 @@ hr {
 .add-cart-button:hover {
     background-color: #fce7de; 
     color: white; 
-    border-color: #fce7de;
+    border-color: #ffe1d5;
     transform: scale(1.1); 
 }
