@@ -130,6 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
               }
           }
           updateTotalPrice();
+          updateCartCount();
       });
   });
 
@@ -157,6 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
           }
       }
       updateTotalPrice();
+      updateCartCount();
     });
   })
 });
