@@ -101,7 +101,13 @@ body {
         width: 100%;  /*ends with the screen*/
 box-sizing: border-box;
     }
-
+    .icon-cart {
+        position: relative; /* cart icon in correct position */
+    }
+    .cart-count {
+        top: 2em;  /*Counter circle stick to cart icon*/
+        right: 3.5em;
+    }
 }
 
 
