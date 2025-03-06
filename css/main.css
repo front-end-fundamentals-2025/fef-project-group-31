@@ -6,7 +6,7 @@
     font-style: normal;
   font-weight: 400;
 }
-
+/*Header items and icons*/
 .heart, .cart {
    width: 1.5em;
    padding-left: 3em;
@@ -33,7 +33,8 @@ ul {
 margin-top: 10px;
 margin-bottom: 0px;
 padding: 8px;
-width: 100%;
+width: 100%;  /*ends with the screen*/
+box-sizing: border-box;
     
 }
 
@@ -74,30 +75,37 @@ body {
 
 /*responsiveness on header items*/
 @media screen and (max-width: 520px) {
+    h1 {
+        padding-left: 0.2em;
+    }
     header, ul {
         flex-direction: column;
         align-items: start;
     }
     li {
+        flex-direction: column;
         margin-left: 0;
+        padding-left: 0.5em;
     }
     .heart, .cart {
-        padding-left: 0;
+        padding-left: 0.5em;
     }
+    .heart {
+        margin-top: 0.9em;  /*separate icons further down*/
+    }
+    ul {
+        gap: 0.4em;   /*More space between them*/
+        margin-top: 0;
+    }
+    #search {
+        width: 100%;  /*ends with the screen*/
+box-sizing: border-box;
+    }
+
 }
 
-@media screen and (min-width: 520px) {
-    .deals-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
-/*@media screen and (min-width: 730px) {
-    .deals-container {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }*/
+
 
 
 

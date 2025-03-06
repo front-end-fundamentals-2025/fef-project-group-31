@@ -41,6 +41,20 @@ section {
     padding: 10em;
 }
 
+/*responsiveness on the home content, for mobile*/
+@media screen and (max-width: 520px) {
+    section {
+        flex-direction: column; /*stacked*/
+        align-items: center; 
+    }
+    h2 {
+        text-align: center;
+    }
+    .deal-box {
+        margin-bottom: 2em;
+    }
+}
+
 .box-under {
     display: flex;  
     flex-direction: column;

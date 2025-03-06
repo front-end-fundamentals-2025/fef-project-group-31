@@ -17,7 +17,7 @@ img {
        /* Border around each product box */
         padding: 10px;
         margin-bottom: 20px; /* Space between product boxes */
-        border-radius: 10px; /* Optional: Rounded corners for a softer look */
+        border-radius: 10px; 
         justify-content: space-between;
         background-color: #fce7de3a; 
         height: 600px;
