@@ -1,7 +1,9 @@
 form {
     display: grid;
     grid-gap: 1em;
-    width: 30vw;
+    width: 400px;
+    box-sizing: border-box; 
+ 
 }
 /*The form itself*/
 section {
@@ -9,6 +11,7 @@ section {
     border: 0.2em solid;
     border-radius: 1em;
     padding: 2em;
+    box-sizing: border-box;
 }
 /*move to middle of page*/
 main {
@@ -51,5 +54,14 @@ form input {
     font-size: large;
     padding: 0.4em;
 }
-
+/*responsiveness for log in form, mobile*/
+@media screen and (max-width: 520px){
+    form {
+     width: 320px; 
+    
+    }
+    section {
+        transform: translateY(-8em); /*move up a bit*/
+    }
+}
 
