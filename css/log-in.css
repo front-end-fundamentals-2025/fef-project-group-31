@@ -28,14 +28,16 @@ button {
     font-weight: 700;
     font-size: small;
 }
-input {
+form input {
     font-size: 70%;
     padding: 0.4em;
     border:  0.3em solid;
     border-color:  #fce7de;
 }
 
-::placeholder {
+form ::placeholder {
     font-size: large;
     padding: 0.4em;
 }
+
+

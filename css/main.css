@@ -5,7 +5,6 @@
     font-optical-sizing: auto;
     font-style: normal;
   font-weight: 400;
-
 }
 
 .heart, .cart {
@@ -15,9 +14,11 @@
 
 header {
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: #fce7de;
     margin: 0%;
+    padding: 0;
 }
 
 ul {
@@ -27,6 +28,28 @@ ul {
     margin-bottom: 5%;
     align-items: center;
 }
+
+#search {
+margin-top: 10px;
+margin-bottom: 0px;
+padding: 8px;
+width: 100%;
+    
+}
+
+/*Box + text design*/
+input {
+    font-size: medium;
+    padding: 0.4em;
+    border:  2px solid;
+    border-color: rgb(253, 112, 152);
+    justify-self: start;
+}
+
+::placeholder {
+    font-size: large;
+}
+
 /*Space between listed items*/
 li {
     margin-left: 4.5rem;
@@ -107,3 +130,5 @@ body {
     border-radius: 50%; /* Circle */
     font-weight: bold;
 }
+
+
