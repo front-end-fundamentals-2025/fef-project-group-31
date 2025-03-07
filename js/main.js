@@ -102,3 +102,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //localStorage.clear();     //debugging
 
+
+//Search Bar functionality: 
+
+const inputElement = document.getElementById("search");
+
+inputElement.addEventListener('keydown', function(event) {
+    let enteredProduct = inputElement.value.toLowerCase(); // case-insensitive
+
+    if (event.key === 'Enter') {
+        if (enteredProduct === "foundation") {
+            window.location.href = "foundation.html"; // ChatGPT on how to change page
+        } if (enteredProduct === "blush") {
+            window.location.href = "blush.html";
+        } if (enteredProduct === "primer") {
+            window.location.href = "primer.html";
+        }
+    }
+});
