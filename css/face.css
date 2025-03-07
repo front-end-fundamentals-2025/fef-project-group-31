@@ -99,8 +99,17 @@ hr {
 
 .add-cart-button:hover {
     background-color: #fce7de; 
-    color: white; 
-    border-color: #ffe1d5;
-    transform: scale(1.1); 
+    color: white;
+    font-weight: bold;
+    border-color: white;
+    transform: scale(1.05); 
 }
 
+/*Nav menu placement*/
+.makeup-nav {
+    margin-left: 20px;
+}
+
+h2 {
+    margin-left: 10px;
+}
