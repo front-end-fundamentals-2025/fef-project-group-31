@@ -1,3 +1,5 @@
+// Shopping cart: localstorage and functions used in cart adapted from Digital Fox https://www.youtube.com/watch?v=pRkHOD_nkH4&t=408s
+
 //Fetching json objects:
     fetch("products.json")
     .then(function(response){
@@ -23,8 +25,7 @@ let cart = JSON.parse(localStorage.getItem("cart"));
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-
-// Function to update the cart count in header adapted from https://www.youtube.com/watch?v=gXWohFYrI0M&t=758s and ChatGPT 
+// Function to update the cart count in header adapted from Lun Dev https://www.youtube.com/watch?v=gXWohFYrI0M&t=758s and ChatGPT 
 function updateCartCount() {
     // Get cart from localStorage
     let cart = JSON.parse(localStorage.getItem("cart")) || []; 
@@ -87,7 +88,7 @@ return product.id == productId;
 
 //For the product buttons: 
 let addToCartButtons = document.querySelectorAll('.add-cart-button');
-// Loop through each button and add an event listener
+//Once DOM loaded
 document.addEventListener('DOMContentLoaded', function() {
     let addCartButtons = document.querySelectorAll('.add-cart-button');
     
@@ -104,7 +105,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 //Search Bar functionality: 
-
 const inputElement = document.getElementById("search");
 
 inputElement.addEventListener('keydown', function(event) {

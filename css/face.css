@@ -50,6 +50,18 @@ img {
  
 }
 
+.add-fav-button {
+    margin-top: 5%;
+    font-size: medium;
+    padding: 0.5em;
+    border: 2px solid;
+    border-radius: 0.5em;
+    border-color:white;
+    background-color: #f9f9f9; 
+    
+   }
+
+
 /*responsiveness*/
 @media screen and (max-width: 1430px) {
     .product {

@@ -23,7 +23,8 @@ if (storedProducts) {
             <p>Price: ${product.price}</p>
             <p class="description" >${product.description}</p>
           <button class="add-cart-button" data-product-id="${product.id}" type="button">Add to cart</button>
-        `;
+        <button class="add-fav-button" data-product-id="${product.id}" type="button">Like</button>
+          `;
     } else {
         // If no product is found, display an error message
         document.getElementById('detail-container').innerHTML = "<p>Product not found.</p>";
