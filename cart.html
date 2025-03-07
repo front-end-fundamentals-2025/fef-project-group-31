@@ -6,6 +6,7 @@
     <title>Esther Cosmetics</title>
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="css/makeup.css"/>
+    <link rel="stylesheet" href="css/cart.css"/>
     <script src="js/main.js" defer></script>
     <script src="js/cart.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,10 +47,19 @@
     <input id="search" type="text"placeholder="Search"/>
 </header>
 <main>
+    
+    <h2>YOUR CART</h2>
+
 <div id="cart-container">
     <!-- Cart items displayed here -->
 </div>
+
+<div id="price-checkout">
 <div id="display-total-price"></div>
+    <div id="checkout-container">
+        <button id="checkout-button" style="display:none;">Proceed to Checkout</button>
+    </div>
+</div>
 </main>
 </body>
 </html>

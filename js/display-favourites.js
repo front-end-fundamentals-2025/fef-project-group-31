@@ -33,9 +33,11 @@ function removeItemFromLiked(productId){
                     </div>
                     <div class="liked-item-details">
                         <h3 class="product-name">${product.name}</h3>
+                        <div class="price-remove">
                         <p class="product-price">${product.price}</p>
                         <button class="remove-fav" data-product-id="${product.id}" type="button">Remove from favourites</button>
-                    </div> 
+                  </div>
+                        </div> 
                     `; 
                 
                 productDiv.innerHTML = productHTML;
