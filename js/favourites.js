@@ -43,7 +43,7 @@ if (product) {
     });
     if (!productInLiked) {
         liked.push(product);
-        localStorage.setItem("liked", JSON.stringify(cart));
+        localStorage.setItem("liked", JSON.stringify(liked));
     }
     console.log('Product added to favourites:', product); // Log the added product
     console.log('Current favourites:', liked); 
