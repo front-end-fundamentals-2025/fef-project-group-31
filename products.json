@@ -3,177 +3,176 @@
     "id": 1,
     "image": "images/primer1.jpg",
     "name": "NYX Professional Makeup, Plump right back Primer + Serum",
-    "price": "99SEK",
+    "price": "99 SEK",
     "quantity": 0,
-    "description": "A hydrating primer that works as a serum too. Perfect for plumping the skin before makeup."
+    "description": "This versatile product serves as both a hydrating primer and a nourishing serum, delivering moisture and plumping the skin before makeup application. Ideal for creating a smooth and firm canvas, it ensures your makeup stays fresh and radiant throughout the day, while working to boost the skin's natural hydration for a revitalized, healthy glow."
   },
   {
     "id": 2,
     "image": "images/primer2.jpg",
     "name": "NYX Professional Makeup, Marshmellow soothing primer",
-    "price": "259SEK",
+    "price": "259 SEK",
     "quantity": 0,
-    "description": "A soothing primer that helps to create a smooth base for your makeup, while also calming the skin."
+    "description": "The Marshmellow Soothing Primer is the perfect solution for creating a smooth, even base for your makeup. Infused with marshmallow root extract, this primer helps to calm and soothe the skin while minimizing the appearance of pores. Its velvety texture glides over the skin, providing an ultra-soft touch that helps makeup to stay in place longer, without irritation or discomfort."
   },
   {
     "id": 3,
     "image": "images/primer3.2.jpg",
     "name": "NYX Professional Makeup, Face freezie cooling Primer + Moisturizer",
-    "price": "199SEK",
+    "price": "199 SEK",
     "quantity": 0,
-    "description": "A cooling primer + moisturizer that refreshes and hydrates the skin before applying makeup."
+    "description": "Refresh and hydrate your skin with the cooling sensation of this dual-purpose primer and moisturizer. Infused with refreshing ingredients, it instantly cools the skin, making it feel invigorated and revitalized. It helps to lock in moisture while preparing the skin for makeup application, ensuring your complexion looks fresh and smooth all day long."
   },
   {
     "id": 4,
     "image": "images/primer4.jpg",
     "name": "LUMENE, Blur longwear primer",
-    "price": "169SEK",
+    "price": "169 SEK",
     "quantity": 0,
-    "description": "A long-wearing primer that helps to blur imperfections, leaving a smooth and matte finish."
+    "description": "The Blur Longwear Primer from Lumene is designed to create a flawless, matte finish. It blurs imperfections, smooths out uneven texture, and helps to control oil throughout the day. Ideal for those with oily or combination skin, it ensures makeup stays intact for longer, providing a perfected base that feels comfortable and lightweight."
   },
   {
     "id": 5,
     "image": "images/primer5.jpg",
     "name": "LUMENE, Moisturizing illuminate primer",
-    "price": "179SEK",
+    "price": "179 SEK",
     "quantity": 0,
-    "description": "A moisturizing primer that gives a luminous glow and provides a smooth base for makeup."
+    "description": "This illuminating primer combines the benefits of hydration with a radiant, luminous glow. It infuses the skin with moisture while creating a glowing, dewy finish, perfect for those seeking a bright and youthful appearance. The primer provides an excellent base for makeup, allowing for better application and longer wear without drying out the skin."
   },
   {
     "id": 6,
     "image": "images/primer6.jpg",
     "name": "LUMENE, Instant glow UV primer SPF",
-    "price": "349SEK",
+    "price": "349 SEK",
     "quantity": 0,
-    "description": "An illuminating primer with SPF that provides instant glow and protects your skin from the sun."
+    "description": "Protect your skin from harmful UV rays while giving it an instant, radiant glow with this illuminating primer. Infused with SPF, it not only shields the skin from the sun but also provides a smooth, luminous finish that brightens the complexion. This primer is perfect for those who want a glowing, sun-protected look with a lightweight feel."
   },
   {
     "id": 7,
     "image": "images/primer7.jpg",
     "name": "LUMENE, CC Color correction primer",
-    "price": "169SEK",
+    "price": "169 SEK",
     "quantity": 0,
-    "description": "A CC cream primer that helps to correct skin tone and provides an even base for makeup."
+    "description": "This CC cream primer is designed to correct uneven skin tones and imperfections, providing an even base for makeup application. It effectively neutralizes redness, discoloration, and blemishes while creating a smooth surface that enhances the wear of foundation. The lightweight formula gives a natural finish with the added benefit of skin-perfecting coverage."
   },
   {
     "id": 8,
     "image": "images/primer8.jpg",
     "name": "MAX FACTOR, Facefinity universal primer",
-    "price": "179SEK",
+    "price": "179 SEK",
     "quantity": 0,
-    "description": "A universal primer that works for all skin types, leaving a smooth and flawless base for makeup."
+    "description": "Max Factor's Facefinity Universal Primer is an all-in-one primer that works for all skin types, providing a smooth and flawless canvas for makeup. It helps to even out skin texture, minimize pores, and extend the wear of your makeup throughout the day. Whether you have dry, oily, or combination skin, this primer will enhance your foundation's finish and longevity."
   },
   {
     "id": 9,
     "image": "images/foundation1.jpg",
     "name": "LUMENE, Blur 16H longwear foundation",
-    "price": "229SEK",
+    "price": "229 SEK",
     "quantity": 0,
-    "description": "A longwear foundation with blurring effects to give your skin a flawless look for up to 16 hours."
+    "description": "This foundation offers long-lasting coverage with a blurring effect that smooths out imperfections and evens the skin tone. Designed to last up to 16 hours, it provides full coverage while remaining lightweight and breathable. Ideal for all-day wear, it ensures your skin looks flawless without the need for touch-ups, while its oil-absorbing properties keep your complexion looking fresh."
   },
   {
     "id": 10,
     "image": "images/foundation2.jpg",
     "name": "MAYBELLINE NEW YORK, Instant perfector 4-in-1 Glow",
-    "price": "189SEK",
+    "price": "189 SEK",
     "quantity": 0,
-    "description": "A 4-in-1 glow foundation that corrects, perfects, and hydrates your skin with a radiant finish."
+    "description": "This all-in-one glow foundation provides multiple benefits in one easy step. It corrects, perfects, hydrates, and adds radiance to the skin for a fresh and glowing complexion. With its lightweight texture, this foundation offers natural coverage that enhances your skin's appearance while keeping it hydrated throughout the day."
   },
   {
     "id": 11,
     "image": "images/foundation3.jpg",
     "name": "Anastasia Beverly Hills, Impeccable foundation",
-    "price": "589SEK",
+    "price": "589 SEK",
     "quantity": 0,
-    "description": "A full-coverage foundation that provides a matte finish and an impeccable flawless look."
+    "description": "The Impeccable Foundation from Anastasia Beverly Hills provides full, buildable coverage with a matte finish, leaving the skin looking flawless and smooth. Perfect for those seeking a high-performance foundation, it covers imperfections without feeling heavy or cakey, making it ideal for long-lasting wear, whether for a night out or everyday use."
   },
   {
     "id": 12,
     "image": "images/foundation4.jpg",
     "name": "MAYBELLINE NEW YORK, FIT ME! Matte ? Poreless make-up",
-    "price": "139SEK",
+    "price": "139 SEK",
     "quantity": 0,
-    "description": "A matte foundation that minimizes pores and gives you a fresh, natural look."
+    "description": "This lightweight foundation is designed to minimize pores and provide a matte finish that controls shine all day. It blends seamlessly into the skin, offering medium to full coverage while maintaining a natural, breathable feel. Perfect for those with oily skin, it ensures a smooth, fresh complexion that stays matte and flawless without feeling heavy."
   },
   {
     "id": 13,
     "image": "images/foundation5.jpg",
     "name": "MAYBELLINE NEW YORK, Superstay lumi matte foundation",
-    "price": "219SEK",
+    "price": "219 SEK",
     "quantity": 0,
-    "description": "A luminous matte foundation that stays put for up to 24 hours with a soft, natural finish."
+    "description": "The SuperStay Lumi Matte Foundation combines the best of both worlds: a luminous, radiant finish with a matte texture. It offers long-lasting, full coverage that stays put for up to 24 hours, while its lightweight formula keeps the skin feeling fresh and natural. This foundation delivers a flawless finish without sacrificing comfort, making it perfect for all-day wear."
   },
   {
     "id": 14,
     "image": "images/foundation6.jpg",
     "name": "ISADORA, No compromise lightweight matte foundation",
-    "price": "229SEK",
+    "price": "229 SEK",
     "quantity": 0,
-    "description": "A lightweight matte foundation that delivers full coverage while feeling comfortable on the skin."
+    "description": "This foundation delivers full coverage while maintaining a lightweight, breathable feel on the skin. The No Compromise formula offers a matte finish that controls oil and minimizes shine, ensuring your makeup stays in place all day. Its comfortable texture ensures it feels like second skin, leaving you with a perfect, even complexion."
   },
   {
     "id": 15,
     "image": "images/foundation7.jpg",
     "name": "NYX Professional makeup, Buttermelt glaze skin tint SPF30 Foundation",
-    "price": "199SEK",
+    "price": "199 SEK",
     "quantity": 0,
-    "description": "A skin tint foundation that provides a smooth, dewy finish and includes SPF 30 for sun protection."
+    "description": "This skin tint foundation combines the benefits of a lightweight, dewy finish with sun protection. Enriched with SPF 30, it shields the skin from harmful UV rays while providing a smooth, fresh look that glows throughout the day. Perfect for those who want light coverage with a natural, radiant finish, this formula ensures comfort and hydration."
   },
   {
     "id": 16,
     "image": "images/blush1.jpg",
     "name": "NYX Professional Makeup, Sweet cheeks matte blush",
-    "price": "179SEK",
+    "price": "179 SEK",
     "quantity": 0,
-    "description": "A matte blush that provides a natural flush of color to your cheeks."
+    "description": "Sweet Cheeks Matte Blush gives a natural flush of color to your cheeks with a soft, matte finish. The buildable formula allows you to customize your color intensity, whether you prefer a subtle tint or a bold pop of color. Its smooth texture blends effortlessly into the skin, ensuring a long-lasting, fresh look all day."
   },
   {
     "id": 17,
     "image": "images/blush2.jpg",
     "name": "NYX Professional Makeup, Sweet cheeks cream blush",
-    "price": "179SEK",
+    "price": "179 SEK",
     "quantity": 0,
-    "description": "A creamy blush formula that gives a fresh, dewy finish for a healthy glow."
+    "description": "This cream blush formula provides a fresh, dewy finish that gives the skin a healthy, radiant glow. Perfect for a natural look, it blends seamlessly into the skin and can be layered for added intensity. Ideal for those with dry skin, this blush is hydrating and gives a soft, youthful appearance."
   },
   {
     "id": 18,
     "image": "images/blush3.jpg",
     "name": "REVOLUTION, Blush bomb liquid blush",
-    "price": "145SEK",
+    "price": "145 SEK",
     "quantity": 0,
-    "description": "A liquid blush that blends easily and gives a radiant, long-lasting flush."
+    "description": "The Blush Bomb Liquid Blush from Revolution gives a radiant flush of color that blends effortlessly into the skin for a long-lasting, luminous finish. Its lightweight, buildable formula can be applied directly to the cheeks for a vibrant pop of color that stays fresh all day without fading or smudging."
   },
   {
     "id": 19,
     "image": "images/blush4.jpg",
     "name": "ANASTASIA BEVERLY HILLS, Blush trio",
-    "price": "589SEK",
+    "price": "589 SEK",
     "quantity": 0,
-    "description": "A blush trio palette with three shades to enhance your cheeks with buildable color."
+    "description": "This Blush Trio palette features three complementary shades to enhance your cheeks with customizable color. The finely-milled powder blends smoothly into the skin, providing a radiant, buildable flush. Whether you want a subtle wash of color or a bold statement, this palette offers the perfect options to create a glowing look."
   },
   {
     "id": 20,
     "image": "images/blush5.jpg",
     "name": "LUMENE, Blush stick",
-    "price": "149SEK",
+    "price": "149 SEK",
     "quantity": 0,
-    "description": "A stick blush that gives you a pop of color in a convenient, easy-to-apply formula."
+    "description": "This easy-to-apply blush stick provides a pop of color with a creamy texture that melts seamlessly into the skin. Ideal for on-the-go use, it delivers a natural flush with a radiant finish, perfect for those who want a quick and effortless way to enhance their complexion."
   },
   {
     "id": 21,
     "image": "images/blush6.jpg",
     "name": "SMASHBOX, Cali contour powder blush",
-    "price": "459SEK",
+    "price": "459 SEK",
     "quantity": 0,
-    "description": "A powder blush that sculpts and enhances your cheekbones for a sun-kissed glow."
+    "description": "The Cali Contour Powder Blush from Smashbox sculpts and enhances the cheekbones with a sun-kissed glow. This powder blush offers a silky, smooth texture that blends easily and builds up color without looking cakey. Perfect for creating a healthy, glowing complexion, it can be used to highlight, contour, and add a pop of color."
   },
   {
     "id": 22,
     "image": "images/blush7.jpg",
     "name": "L'ORÉAL PARIS, Glow blush",
-    "price": "179SEK",
+    "price": "179 SEK",
     "quantity": 0,
-    "description": "A blush that delivers a glowing finish with a soft, radiant color payoff."
+    "description": "The Glow Blush from L'Oréal Paris delivers a soft, radiant finish with a beautiful glow that enhances the cheeks. Its lightweight formula blends seamlessly into the skin, providing a natural flush of color with a luminous, healthy shine that lasts all day, giving you that fresh, radiant glow."
   }
 ]
-

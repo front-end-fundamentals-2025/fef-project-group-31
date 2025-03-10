@@ -51,9 +51,15 @@ function updateTotalPrice() {
 
   // Display the total price in HTML div 
   const totalPriceDiv = document.getElementById('display-total-price');
+  const checkoutButton = document.getElementById('checkout-button');
   if (totalPriceDiv) {
-      totalPriceDiv.innerHTML = `<p>Total Price: SEK${total.toFixed(2)}</p>`; // Format to 2 decimal places
+      totalPriceDiv.innerHTML = `<p class="total">Total Price: ${total.toFixed(2)} SEK</p>`; // Format to 2 decimal places
   }
+
+  if (total > 0) {
+    checkoutButton.style.display = 'block'; // ChatGPT, Show checkout button if something in cart
+  } 
+
   if(total === 0) {
     totalPriceDiv.innerHTML = `<p></p>`; //otherwise the totalprice=0 remains on screen when cart empty
   }
@@ -80,13 +86,13 @@ document.addEventListener('DOMContentLoaded', function() {
                   </div>
                   <div class="cart-item-details">
                       <h3 class="product-name">${product.name}</h3>
+                      <div class="info">
                       <p class="product-price">${product.price}</p>
-                       <button class="plus-button" data-product-id="${product.id}" type="button">+</button>
-
-                         <p class="product-quantity">Quantity: <span class="quantity">${product.quantity}</span></p>
-
-              <button class="minus-button" data-product-id="${product.id}" type="button">-</button>
-                  </div> 
+                       <button class="minus-button" data-product-id="${product.id}" type="button">-</button>
+                         <p class="product-quantity"><span class="quantity">${product.quantity}</span></p>
+             <button class="plus-button" data-product-id="${product.id}" type="button">+</button>
+              </div>
+              </div> 
                   `; //added a + and - button, show quantity in middle
               
               productDiv.innerHTML = productHTML;

@@ -19,10 +19,13 @@ if (storedProducts) {
         const detailContainer = document.getElementById('detail-container');
         detailContainer.innerHTML = `
             <h1 class="detail-header" >${product.name}</h1>
+            <div class="detail-box">
             <img class="detail-image" src="${product.image}" alt="${product.name}">
-            <p>Price: ${product.price}</p>
+            <p class="price">${product.price}</p>
             <p class="description" >${product.description}</p>
+            </div>
           <button class="add-cart-button" data-product-id="${product.id}" type="button">Add to cart</button>
+        <button class="add-fav-button" data-product-id="${product.id}" type="button">Like</button>
         `;
     } else {
         // If no product is found, display an error message

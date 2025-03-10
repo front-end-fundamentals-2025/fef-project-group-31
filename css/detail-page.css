@@ -2,8 +2,16 @@
     padding-left: 1rem;
 }
 
+.price {
+    white-space: nowrap; 
+    margin: 0;
+}
+
+p {
+    font-size: large;
+}
 .detail-image {
-width: 30%;
+width: 10em;
 margin-left: 0;
 }
 
@@ -16,6 +24,31 @@ margin-left: 0;
     margin-left: 1rem;
 }
 
+.detail-box {
+    display: flex;
+    gap: 2em;
+    align-items: center; 
+    background-color:rgb(253, 253, 253);
+    border: solid 2px;
+    border-color: #fce7de; 
+    padding: 2em;
+}
 
+.add-fav-button {
+    margin-top: 5%;
+    font-size: medium;
+    padding: 0.5em;
+    border: 2px solid;
+    border-radius: 0.5em;
+    border-color:white;
+    background-color: #f9f9f9; 
+    
+   }
 
-
+.add-fav-button:hover {
+    background-color: #fce7de; 
+    color: white;
+    font-weight: bold;
+    border-color: white;
+    transform: scale(1.05);
+}
