@@ -15,7 +15,7 @@
 let products = JSON.parse(localStorage.getItem("products"));
 let cart = JSON.parse(localStorage.getItem("cart"));
 
-  //Function for changing number of products 
+  /*//Function for changing number of products 
   function updateQuantity(productId, quantity){
     for(let product of cart){
         if(product.id == productId){
@@ -23,7 +23,7 @@ let cart = JSON.parse(localStorage.getItem("cart"));
         }
     }
     localStorage.setItem("cart", JSON.stringify(cart));
-}
+}*/
 
 // Function to update the cart count in header adapted from Lun Dev https://www.youtube.com/watch?v=gXWohFYrI0M&t=758s and ChatGPT 
 function updateCartCount() {
@@ -60,7 +60,9 @@ return product.id == productId;
             return item.id == productId;
         });
         if (productInCart) {
-            updateQuantity(productId, productInCart.quantity + 1);
+            // Increase quantity if product already in cart
+            productInCart.quantity += 1; 
+            localStorage.setItem("cart", JSON.stringify(cart)); 
         } else {
             // If the product is not in the cart, add it with quantity 1
             product.quantity = 1;
