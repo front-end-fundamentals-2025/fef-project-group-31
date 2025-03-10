@@ -9,7 +9,11 @@
 /*Header items and icons*/
 .heart, .cart {
    width: 1.5em;
-   padding-left: 3em;
+}
+
+.login{
+    width: 1.5em;
+    padding-left: 1em;
 }
 
 header {
@@ -27,6 +31,8 @@ ul {
     padding-left: 0%;
     margin-bottom: 5%;
     align-items: center;
+    width: 100%;
+    gap: 1rem;
 }
 
 #search {
@@ -53,7 +59,7 @@ input {
 
 /*Space between listed items*/
 li {
-    margin-left: 4.5rem;
+    margin-left: 1rem;
     
 } 
 
@@ -74,7 +80,8 @@ body {
 }
 
 /*responsiveness on header items*/
-@media screen and (max-width: 520px) {
+
+@media screen and (max-width: 550px) {
     h1 {
         padding-left: 0.2em;
     }
@@ -87,12 +94,10 @@ body {
         margin-left: 0;
         padding-left: 0.5em;
     }
-    .heart, .cart {
-        padding-left: 0.5em;
+    .login, .heart, .cart {
+        padding-left: 0em;
     }
-    .heart {
-        margin-top: 0.9em;  /*separate icons further down*/
-    }
+    
     ul {
         gap: 0.4em;   /*More space between them*/
         margin-top: 0;
@@ -105,8 +110,9 @@ box-sizing: border-box;
         position: relative; /* cart icon in correct position */
     }
     .cart-count {
-        top: 2em;  /*Counter circle stick to cart icon*/
-        right: 3.5em;
+        position: absolute;
+        transform: translate(0.8em, -2.3em);
+        
     }
 }
 
@@ -124,7 +130,7 @@ box-sizing: border-box;
 /* Stick to corner of the cart icon */
 .cart-count {
     position: absolute;
-    transform: translate(4.7em, -2.7em);
+    transform: translate(1.3em, -2.7em);
     background-color: rgb(255, 0, 76);
     width: 20px;
     height: 20px;
