@@ -1,8 +1,13 @@
 p, h2, h3{
-    padding: 1em;
+    padding: 0.5em;
 }
 
 p {
     font-weight: 300;
+}
+
+.content-container {
+    max-width: 900px;    /* This is the maximum width of the content */
+    padding: 0 20px;     /* Padding on left and right to ensure no text touches the edges */
 }
 
