@@ -41,6 +41,8 @@ function updateCartCount() {
   
 //Function for adding products to cart 
   function addItemToCart(productId){
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
     let product = products.find(function(product){
 return product.id == productId;
     });
