@@ -41,10 +41,30 @@ section {
     padding: 10em;
 }
 
-/*responsiveness on the home content, for mobile*/
+/*responsiveness on the home content*/
+@media screen and (max-width: 1280px) {
+    section {
+        flex-direction: column; 
+        align-items: center;
+
+    }
+    .deals {
+        width:100%;
+        height: auto; 
+    }
+    .deal-box {
+        margin-bottom: 2em;
+        width: 100%;
+        display: flex;             
+       justify-content: center;    
+        align-items: center;        
+        box-sizing: border-box; 
+    }
+}
+
 @media screen and (max-width: 520px) {
     section {
-        flex-direction: column; /*stacked*/
+        flex-direction: column; 
         align-items: center; 
     }
     h2 {
