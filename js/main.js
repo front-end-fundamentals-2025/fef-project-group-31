@@ -1,4 +1,4 @@
-// Shopping cart: localstorage and functions used in cart adapted from Digital Fox https://www.youtube.com/watch?v=pRkHOD_nkH4&t=408s
+// Shopping cart: localstorage and functions used in cart adapted from Digital Fox video https://www.youtube.com/watch?v=pRkHOD_nkH4&t=408s
 
 //Fetching json objects:
     fetch("products.json")
@@ -14,16 +14,6 @@
   
 let products = JSON.parse(localStorage.getItem("products"));
 let cart = JSON.parse(localStorage.getItem("cart"));
-
-  /*//Function for changing number of products 
-  function updateQuantity(productId, quantity){
-    for(let product of cart){
-        if(product.id == productId){
-            product.quantity = quantity;
-        }
-    }
-    localStorage.setItem("cart", JSON.stringify(cart));
-}*/
 
 // Function to update the cart count in header adapted from Lun Dev https://www.youtube.com/watch?v=gXWohFYrI0M&t=758s and ChatGPT 
 function updateCartCount() {
@@ -64,12 +54,12 @@ return product.id == productId;
             productInCart.quantity += 1; 
             localStorage.setItem("cart", JSON.stringify(cart)); 
         } else {
-            // If the product is not in the cart, add it with quantity 1
+            // If product is not in cart, add it with quantity 1
             product.quantity = 1;
             cart.push(product);
             localStorage.setItem("cart", JSON.stringify(cart));
         }
-        console.log('Product added to cart:', product); // Log the added product
+        console.log('Product added to cart:', product); // Log the added product, debugging
         console.log('Current cart:', cart); 
 
         updateCartCount(); //show amount in header immediately once addtocart happens
@@ -119,6 +109,8 @@ inputElement.addEventListener('keydown', function(event) {
             window.location.href = "blush.html";
         } if (enteredProduct === "primer") {
             window.location.href = "primer.html";
+        } if (enteredProduct === "makeup") {
+            window.location.href = "makeup.html";
         }
     }
 });

@@ -100,3 +100,20 @@ section {
         75%, 95% { transform: translateY(-150px); }
         100% { transform: translateY(-200px); }
     }
+
+
+    /*responsiveness on animation for mobile*/
+    @media screen and (max-width: 580px) {
+        .box-under {
+            font-size: 15px;
+            line-height: 35px;
+
+        }
+    }
+
+    @media screen and (max-width: 361px) {
+        .box-under {
+            font-size: 10px;
+            line-height: 40px;
+        }
+    }

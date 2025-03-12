@@ -1,4 +1,4 @@
-/* Functions removeItemFromCart, updateQuantity adapted from
+/* Functions removeItemFromCart and updateQuantity adapted from
  Digital Fox https://www.youtube.com/watch?v=pRkHOD_nkH4&t=408s */
 
 
@@ -8,9 +8,9 @@ function removeItemFromCart(productId){
   //Making sure localstorage clears when cart has been emptied:
   let updatedCart = cart.filter(item => item.id != productId);
   if (updatedCart.length === 0) {
-      localStorage.removeItem("cart"); // Clear cart from localStorage
+      localStorage.removeItem("cart"); // clear cart from localStorage
   } else {
-      localStorage.setItem("cart", JSON.stringify(updatedCart)); // Update localStorage with the new cart
+      localStorage.setItem("cart", JSON.stringify(updatedCart)); // update localstorage with the new cart
   }
   updateTotalPrice();
   updateCartCount(); //remove from amount shown in the header immediately 
@@ -33,7 +33,7 @@ function updateQuantity(productId, quantity){
  updateTotalPrice();
 }
 
-/*Function updateTotalPrice inspired by Digital Fox https://www.youtube.com/watch?v=pRkHOD_nkH4&t=408s 
+/*Function updateTotalPrice inspired by Digital Fox video https://www.youtube.com/watch?v=pRkHOD_nkH4&t=408s 
 and refined with ChatGPT*/ 
 
 // Function for calculating total and displaying it
@@ -43,10 +43,10 @@ function updateTotalPrice() {
   
   // Sum up the total price, considering quantity for each item
   let total = cart.reduce(function(prev, item) {
-      return prev + (parseFloat(item.price) * item.quantity); // Takes quantity into account
+      return prev + (parseFloat(item.price) * item.quantity); // takes quantity into account
   }, 0);
 
-  // Log the total for debugging
+  // Log the total, debugging
   console.log(total);
 
   // Display the total price in HTML div 
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
               cartContainer.appendChild(productDiv);
           });
       } else {
-          // If the cart is empty, display a message
+          // If cart empty:
           cartContainer.innerHTML = "<p>Your cart is empty.</p>";
       }
       updateTotalPrice();
@@ -110,9 +110,9 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-/*Fundementals of event listener for buttons inspired by Evelines video
-, consistent quantity updating and implementing functions correctly 
-with help from ChatGPT */
+/*Fundementals of applying event listeners for buttons inspired by Eveline Ingessons
+video https://www.youtube.com/watch?v=VegecG4EXeI , consistent quantity updating and 
+implementing functions correctly with help from ChatGPT */
 
 //For the + - buttons:
 //Once DOM is loaded
