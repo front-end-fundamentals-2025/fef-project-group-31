@@ -174,5 +174,37 @@
     "price": "179 SEK",
     "quantity": 0,
     "description": "The Glow Blush from L'Oréal Paris delivers a soft, radiant finish with a beautiful glow that enhances the cheeks. Its lightweight formula blends seamlessly into the skin, providing a natural flush of color with a luminous, healthy shine that lasts all day, giving you that fresh, radiant glow."
+  },
+  {
+    "id": 23,
+    "image": "images/skincare1.jpg",
+    "name": "EXUVIANCE, Deep clean aha cleanser",
+    "price": "389 SEK",
+    "quantity": 0,
+    "description": "A foaming cleanser that cleanses without drying out the skin or disrupting the skin's protective barrier. The formula effectively cleanses the skin, removing dirt and make-up while gently exfoliating dead skin cells."
+  },
+  {
+    "id": 24,
+    "image": "images/skincare2.jpg",
+    "name": "The Ordinary, Lactic acid 10% + HA 2%",
+    "price": "119 SEK",
+    "quantity": 0,
+    "description": "Lactic Acid is an alpha hydroxy acid (AHA) that provides an exfoliating effect on the skin's surface, resulting in smoother skin texture and increased radiance. This formula also contains Tasmanian pepper to help reduce irritation that can occur with acid use. The formula also contains hyaluronic acid for deeper hydration. This product contains a milder concentration of 5% lactic acid. The pH of this formula is approximately 3.8. and Lactic acid has a pKA of 3.8."
+  },
+  {
+    "id": 25,
+    "image": "images/skincare3.jpg",
+    "name": "L'OREAL PARIS, Dry and sensitive skin",
+    "price": "94 SEK",
+    "quantity": 0,
+    "description": "Every day, the skin is exposed to external influences such as UV rays, stress and pollution. These factors can make the skin dry and contribute to premature aging. Triple Active Protecting Day Moisturising Care for dry and sensitive skin adds moisture, protects and provides a comfortable feeling. The formula with glycerin helps strengthen the skin's ability to bind moisture, for a hydrated skin for 24 hours. A UV filter helps protect the skin against external influences. The cream with ceramide, vitamin E and vitamin B5 gives the skin a long-lasting comfortable feeling."
+  },
+  {
+    "id": 26,
+    "image": "images/skincare4.jpg",
+    "name": "EVY Technology, Daily face mousse SPF 50",
+    "price": "269 SEK",
+    "quantity": 0,
+    "description": "Daily protection against UV and HEV radiation. An intensely moisturizing anti-ageing facial mousse that strengthens the skin's protective barrier and prevents early signs of aging and pigment spots. The unique skin care technology together with the active ingredients means that the skin receives long-lasting and effective protection against UV light and free radicals that can be formed by the sun and pollution. Also protects against blue / HEV. Intensively moisturizes and helps the skin maintain its natural moisture, leaves no white film and does not clog pores. Strengthens the skin's protective barrier and soothes in all weather conditions. The allergy-tested formula is suitable for all skin types. The formula is useful under make-up. Contains very high UVA protection in relation to UVB protection."
   }
 ]
