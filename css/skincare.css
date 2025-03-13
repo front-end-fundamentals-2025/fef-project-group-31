@@ -16,3 +16,110 @@ margin-right: 3rem;
 h2 {
     margin-left: 10px;
 }
+
+img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+
+    }
+
+    .product-box {
+       /* Border around each product box */
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       padding: 10px;
+       margin-bottom: 20px; /* Space between product boxes */
+       border-radius: 10px; /* Optional: Rounded corners for a softer look */
+       justify-content: space-between;
+       background-color: #fce7de3a; 
+       height: 600px, 800px;
+
+    }
+
+    .product-title {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    /*Price tag and button "add-cart"*/
+.price {
+    margin-top:auto;
+    color: rgb(83, 83, 83);
+}
+
+.add-cart-button {
+ margin-top: 5%;
+ font-size: medium;
+ padding: 0.5em;
+ border: 2px solid;
+ border-radius: 0.5em;
+ border-color:white;
+ background-color: #f9f9f9; 
+ 
+}
+
+/*responsiveness*/
+@media screen and (max-width: 1430px) {
+    .product {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .product {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .product {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+p{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: 550;
+    font-size: 140%;
+}
+
+hr {
+    border: none;
+    height: 4px;
+    background-color: #fce7de; 
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+.add-cart-button:hover {
+    background-color: #fce7de; 
+    color: white;
+    font-weight: bold;
+    border-color: white;
+    transform: scale(1.05); 
+}
