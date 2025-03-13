@@ -1,10 +1,10 @@
-//Code customised by chatgpt to retrieve localstorage and redisplay products on detailpage depending on which
+//Code customised by CHATGPT to retrieve localstorage and redisplay products on detailpage depending on which
 
 // Get the productId from the URL query string
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get('productId');
 
-// Fetch my products from localStorage
+// Fetch from localStorage
 const storedProducts = localStorage.getItem("products");
 
 // Parse the products only if it's available

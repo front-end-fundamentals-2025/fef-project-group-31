@@ -1,4 +1,4 @@
-// Shopping cart: localstorage and functions used in cart adapted from Digital Fox video https://www.youtube.com/watch?v=pRkHOD_nkH4&t=408s
+// Shopping cart: fetching from json, localstorage and functions used in cart adapted from Digital Fox video https://www.youtube.com/watch?v=pRkHOD_nkH4&t=408s
 
 //Fetching json objects:
     fetch("products.json")
@@ -38,7 +38,6 @@ function updateCartCount() {
     updateCartCount();
   });
 
-  
 //Function for adding products to cart 
   function addItemToCart(productId){
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -96,7 +95,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //localStorage.clear();     //debugging
-
 
 //Search Bar functionality: 
 const inputElement = document.getElementById("search");

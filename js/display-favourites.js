@@ -1,5 +1,4 @@
-/*Same logic as cart.js*/
-
+/*Same logic as cart.js, localstorage and functions adapted from Digital Fox https://www.youtube.com/watch?v=pRkHOD_nkH4&t=408s */
 
 // Function for removing item from cart
 function removeItemFromLiked(productId){
@@ -54,7 +53,6 @@ function removeItemFromLiked(productId){
     }
   });
   
-
   //For remove button 
   document.addEventListener('DOMContentLoaded', function() {
     const removeButtons = document.querySelectorAll('.remove-fav');

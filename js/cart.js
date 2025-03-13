@@ -1,7 +1,6 @@
 /* Functions removeItemFromCart and updateQuantity adapted from
  Digital Fox https://www.youtube.com/watch?v=pRkHOD_nkH4&t=408s */
 
-
 // Function for removing item from cart
 function removeItemFromCart(productId){
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -110,8 +109,8 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-/*Fundementals of applying event listeners for buttons inspired by Eveline Ingessons
-video https://www.youtube.com/watch?v=VegecG4EXeI , consistent quantity updating and 
+/*Fundementals of applying event listeners for buttons adapted from Eveline Ingessons
+video https://www.youtube.com/watch?v=VegecG4EXeI ,consistent quantity updating and 
 implementing functions correctly with help from ChatGPT */
 
 //For the + - buttons:
