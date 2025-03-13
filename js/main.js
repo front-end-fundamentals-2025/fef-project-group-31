@@ -111,7 +111,7 @@ inputElement.addEventListener('keydown', function(event) {
             window.location.href = "primer.html";
         } if (enteredProduct === "makeup") {
             window.location.href = "makeup.html";
-        } if (enteredProduct === "skincare.html") {
+        } if (enteredProduct === "skincare") {
             window.location.href = "skincare.html";
         }
     }
