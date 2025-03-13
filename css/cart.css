@@ -104,3 +104,15 @@ padding: 1em;
         transform: translateX(-25px);
     }
 }
+
+@media screen and (max-width: 414px){
+    .cart-item-image img {
+        width: 5em;
+    }
+    h3 {
+       transform: translate(-25px); 
+    }
+    .info {
+        transform: translateX(-90px);
+    }
+}

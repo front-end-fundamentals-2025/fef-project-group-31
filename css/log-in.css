@@ -64,4 +64,13 @@ form input {
         transform: translateY(-8em); /*move up a bit*/
     }
 }
-
+/*for small mobiles*/
+@media screen and (max-width: 414px){
+    form {
+     width: 200px; 
+     height: 270px;
+    }
+    section {
+        transform: translateY(-5em); /*move up a bit*/
+    }
+}

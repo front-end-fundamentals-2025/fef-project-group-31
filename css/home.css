@@ -41,10 +41,30 @@ section {
     padding: 10em;
 }
 
-/*responsiveness on the home content, for mobile*/
+/*responsiveness on the home content*/
+@media screen and (max-width: 1280px) {
+    section {
+        flex-direction: column; 
+        align-items: center;
+
+    }
+    .deals {
+        width:100%;
+        height: auto; 
+    }
+    .deal-box {
+        margin-bottom: 2em;
+        width: 100%;
+        display: flex;             
+       justify-content: center;    
+        align-items: center;        
+        box-sizing: border-box; 
+    }
+}
+
 @media screen and (max-width: 520px) {
     section {
-        flex-direction: column; /*stacked*/
+        flex-direction: column; 
         align-items: center; 
     }
     h2 {
@@ -99,4 +119,21 @@ section {
         50%, 70% { transform: translateY(-100px); }
         75%, 95% { transform: translateY(-150px); }
         100% { transform: translateY(-200px); }
+    }
+
+
+    /*responsiveness on animation for mobile*/
+    @media screen and (max-width: 580px) {
+        .box-under {
+            font-size: 15px;
+            line-height: 35px;
+
+        }
+    }
+
+    @media screen and (max-width: 361px) {
+        .box-under {
+            font-size: 10px;
+            line-height: 40px;
+        }
     }

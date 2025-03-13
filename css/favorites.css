@@ -68,19 +68,13 @@ padding: 1em;
     transform: scale(1.05); 
 }
 
-
-
-
-
-/*responsiveness*/
-@media screen and (max-width: 520px){
-    .cart-item-image img {
-        width: 7em;
+/*responsiveness mobile*/
+@media screen and (max-width: 380px){
+    .liked-item-image img {
+        width: 5em;
     }
     h3 {
        transform: translate(-15px); 
     }
-    .info {
-        transform: translateX(-25px);
-    }
+    
 }
